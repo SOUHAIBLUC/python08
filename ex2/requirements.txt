@@ -1,0 +1,21 @@
+# requirements.txt - pip dependency file
+#
+# This file lists all Python packages needed for this project.
+# Used with: pip install -r requirements.txt
+#
+# FORMAT:
+# package_name==version  (exact version)
+# package_name>=version  (minimum version)
+# package_name           (any version)
+
+# Data manipulation and analysis
+pandas>=2.0.0
+
+# Numerical computing
+numpy>=1.24.0
+
+# Data visualization
+matplotlib>=3.7.0
+
+# Optional: HTTP library for API requests
+requests>=2.31.0

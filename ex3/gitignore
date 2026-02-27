@@ -1,0 +1,36 @@
+# .gitignore - Files to exclude from version control
+#
+# CRITICAL FOR SECURITY:
+# This prevents sensitive files from being committed to git
+
+# Environment variables (contains secrets!)
+.env
+
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+env/
+matrix_env/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Generated files
+*.png
+*.pdf
+matrix_analysis.png

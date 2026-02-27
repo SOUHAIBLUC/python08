@@ -1,0 +1,39 @@
+# pyproject.toml - Poetry dependency file
+#
+# This is the modern Python project configuration file.
+# Poetry uses this to manage dependencies with better version resolution.
+#
+# KEY DIFFERENCES FROM requirements.txt:
+# 1. Contains project metadata (name, version, description)
+# 2. Separates main dependencies from development dependencies
+# 3. Creates poetry.lock file for reproducible installs
+# 4. Better handling of version conflicts
+#
+# Usage: poetry install
+
+[tool.poetry]
+name = "matrix-loading"
+version = "1.0.0"
+description = "The Matrix - Loading Programs exercise"
+authors = ["Neo <neo@zion.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+# Minimum Python version required
+python = "^3.10"
+
+# Main dependencies (needed to run the program)
+pandas = "^2.0.0"
+numpy = "^1.24.0"
+matplotlib = "^3.7.0"
+requests = "^2.31.0"
+
+[tool.poetry.dev-dependencies]
+# Development dependencies (only needed for development, not production)
+# Examples: pytest = "^7.0.0"  (for testing)
+#           flake8 = "^6.0.0"  (for linting)
+
+[build-system]
+# This tells Python how to build the project
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
